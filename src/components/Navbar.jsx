@@ -46,11 +46,11 @@ const Navbar = () => {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-300 mx-auto">
+      className="sticky top-0 z-50 py-2 md:py-3 backdrop-blur-lg border-b border-neutral-300 mx-auto">
       <div className="container lg:px-28 md:px-10 px-6 mx-auto relative text-lg font-medium">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="py-2 max-sm:h-14" src={logo} alt="logo" />
+            <img className="py-2  h-10 md:h-12 lg:h-14" src={logo} alt="logo" />
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
