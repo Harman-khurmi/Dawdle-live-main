@@ -8,11 +8,13 @@ import Consultant from './sections/Consultant'
 import TrustedBy from './sections/TrustedBy'
 import Footer from '../src/components/Footer'
 import SmoothScroll from './components/SmoothScroll'
+// import Wrapper from './components/Wrapper'
 // import './App.css'
 const App = () => {
   return (
     <>
-      <SmoothScroll />
+
+      {/* <SmoothScroll /> */}
       <Navbar />
       <Hero />
       <ConnectRight />
@@ -21,6 +23,7 @@ const App = () => {
       <Consultant />
       <TrustedBy />
       <Footer />
+
 
     </>
   )

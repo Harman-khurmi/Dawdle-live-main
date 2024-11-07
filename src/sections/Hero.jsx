@@ -5,6 +5,13 @@ import heroCards from '../assets/heroCards.svg';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 const Hero = () => {
+
+  const scrollToComponent = () => {
+    const target = document.getElementById('targetComponent');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <section className="relative xs:h-135 h-136 md:h-148 lg:h-148 pb-16 flex justify-center w-full overflow-hidden ">
       {/* Background Image */}
@@ -59,7 +66,7 @@ const Hero = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="mt-6 h-16 items-center w-full flex justify-center">
           <button
-
+            onClick={scrollToComponent}
             className="xs:h-10 h-12 md:h-14 xs:w-52 w-60 md:w-64 lg:w-72 flex justify-between font-medium bg-brandPrimary items-center rounded-full pl-4 pr-1 text-bgWhite transition-all duration-300 ease-in-out transform hover:bg-bgWhite hover:text-brandPrimary hover:shadow-lg hover:scale-105"
           >
             <h3 className="xs:text-sm text-md md:text-lg lg:text-xl transition-all duration-100 ease-in-out">
@@ -83,7 +90,7 @@ const Hero = () => {
             variants={fadeIn("up", 0.5)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once:true, amount:0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             className="w-full max-w-4xl object-contain "
             src={heroCards}
             alt="Hero Cards"

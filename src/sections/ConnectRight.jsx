@@ -1,20 +1,21 @@
-import React from 'react'
 import connect from '../assets/connectRight.svg';
 import arrowBtn from '../assets/arrowBtn.svg';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
-const ConnectRight = () => {
+import React, { forwardRef } from 'react';
+const ConnectRight = forwardRef((props, ref) => {
   return (
     <>
-      <section className='h-auto flex justify-center w-full items-center content-center'>
+      <section className='h-auto flex justify-center w-full items-center content-center relative'>
         {/* Content */}
-        <div className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
+        <div id="targetComponent" className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
           {/* heading */}
           <motion.h1
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.5 }}
+
             className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 md:px-16 lg:px-0 leading-9 md:leading-tight lg:leading-tight">
             <span className='poppins'>We Connect Solution Providers with the</span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Right Enterprises</span>
           </motion.h1>
@@ -68,5 +69,6 @@ const ConnectRight = () => {
     </>
   )
 }
+)
 
 export default ConnectRight

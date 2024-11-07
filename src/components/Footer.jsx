@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Logo and social icons for small and medium screens */}
           <div className="flex flex-col items-center lg:items-start">
             <motion.img
-              variants={fadeIn("right", 0.2)}
+              variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.5 }}
@@ -53,7 +53,7 @@ const Footer = () => {
 
           {/* Social icons for large screens */}
           <motion.div
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.5 }}

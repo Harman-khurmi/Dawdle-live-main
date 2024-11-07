@@ -28,12 +28,17 @@ const Provide = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-6 items-center justify-center mx-auto content-center align-middle">
             {/* Square 1 */}
             <motion.div
-              variants={fadeIn("right", 0.2)}
+              variants={fadeIn("up", 0.1)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: false, amount: 0.7 }}
               className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl h-auto">
-              <div className="content p-9 items-center flex flex-col justify-center gap-4 ">
+              <div
+                // variants={fadeIn("up", 0.2)}
+                // initial="hidden"
+                // whileInView="show"
+                // viewport={{ once: false, amount: 0.2 }}
+                className="content p-9 items-center flex flex-col justify-center gap-4 ">
                 <img src={Consultant} alt="" className='h-16 xs:h-12 ' />
                 <h2 className="md:text-xl text-lg  font-bold">Dawdle Product Consultants</h2>
                 <p className="text-gray-700 text-base ">
@@ -44,12 +49,17 @@ const Provide = () => {
 
             {/* Square 2 */}
             <motion.div
-              variants={fadeIn("left", 0.2)}
+              variants={fadeIn("up", 0.1)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: false, amount: 0.7 }}
               className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl h-auto">
-              <div className="content p-9 items-center flex flex-col justify-center gap-4 ">
+              <div
+                // variants={fadeIn("up", 0.2)}
+                // initial="hidden"
+                // whileInView="show"
+                // viewport={{ once: false, amount: 0.2 }}
+                className="content p-9 items-center flex flex-col justify-center gap-4 ">
                 <img src={connections} alt="" className='h-16 xs:h-12 ' />
                 <h2 className="md:text-xl text-lg  font-bold ">Direct Enterprise Partnerships</h2>
                 <p className="text-gray-700 text-base ">
