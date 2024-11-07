@@ -33,3 +33,27 @@
 .translate-y-full {
   transform: translateY(100%);
 }
+
+@layer components {
+  .square {
+    background-color: white;
+    /* White background for the squares */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+  }
+
+  .hover-effect:hover {
+    box-shadow: 0 12px 30px rgba(98, 92, 249, 0.4);
+    /* Blue backdrop shadow */
+  }
+}
+
+.filter-white {
+  filter: invert(0) sepia(1) saturate(10000%) hue-rotate(0deg) brightness(0) contrast(100%);
+}
+
+.group:hover .filter-white {
+  filter: invert(100%) sepia(0) saturate(0%) hue-rotate(0deg) brightness(1) contrast(1);
+}

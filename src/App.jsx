@@ -3,6 +3,10 @@ import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import ConnectRight from './sections/ConnectRight'
 import Provide from './sections/Provide'
+import Solutions from './sections/Solutions'
+import Consultant from './sections/Consultant'
+import TrustedBy from './sections/TrustedBy'
+import Footer from '../src/components/Footer'
 const App = () => {
   return (
     <>
@@ -10,6 +14,10 @@ const App = () => {
         <Hero />
         <ConnectRight/>
         <Provide/>
+        <Solutions/>
+        <Consultant/>
+        <TrustedBy/>
+        <Footer/>
       <div className="div max-w-256 mx-auto pt-8  px-6 overflow-x-hidden">
       </div>
     </>
