@@ -1,22 +1,22 @@
 import React from 'react'
-import connect from '../assets/connectRight.svg';
+import solution from '../assets/solutionVector.svg';
 import arrowBtn from '../assets/arrowBtn.svg';
 const Solutions = () => {
   return (
     <>
-      <section className='h-auto flex justify-center w-full items-center content-center'>
+      <section className='h-auto flex justify-center w-full items-center content-center mt-8'>
         {/* Content */}
         <div className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
           {/* heading */}
-          <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
+          <h1 className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
             <span className='poppins'>Enterprises Looking for Specialized </span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Technology Solutions</span>
           </h1>
           {/* image */}
           <div className=''>
-            <img src={connect} alt="connectRight-image" className='xs:h-48 h-60 md:h-72' />
+            <img src={solution} alt="connectRight-image" className='xs:h-40 h-56 md:h-72 mt-6' />
           </div>
           {/* parah */}
-          <p className="xs:text-xs text-sm font-medium md:text-lg text-brandSecondary xs:p- px-3 md:px-8 lg:px-0 mt-6">
+          <p className="xs:text-xs text-sm font-medium md:text-lg text-brandSecondary xs:p- px-3 md:px-8 lg:px-0 mt-10">
             If your business requires specialized technology solutions, Dawdle connects you with a curated network of technology providers tailored to meet your needs, ensuring you find the right fit the first time around.
           </p>
 

@@ -63,7 +63,7 @@ import heroCards from '../assets/heroCards.svg';
 
 const Hero = () => {
   return (
-    <section className="relative h-136 md:h-148 lg:h-148 pb-16 flex justify-center w-full overflow-hidden ">
+    <section className="relative xs:h-135 h-136 md:h-148 lg:h-148 pb-16 flex justify-center w-full overflow-hidden ">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center w-full h-full"
@@ -118,12 +118,12 @@ const Hero = () => {
         </div>
 
         {/* Hero Cards Image */}
-        <div className="mt-24 md:mt-60 lg:mt-64 absolute top-128 flex justify-center transform -translate-y-1/2 w-full max-w-4xl overflow-y-hidden">
+        <div className="xs:mt-20 mt-24 md:mt-60 lg:mt-64 absolute top-128 flex justify-center transform -translate-y-1/2 w-full max-w-4xl overflow-y-hidden ">
           <img
             className="w-full max-w-4xl object-contain "
             src={heroCards}
             alt="Hero Cards"
-            style={{ maxHeight: '100vh' }} // Adjust maxHeight if needed
+          // style={{ maxHeight: '100vh' }} // Adjust maxHeight if needed
           />
         </div>
       </div>

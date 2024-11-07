@@ -1,12 +1,11 @@
-import React from 'react'
-import HoverCard from '../components/HoverCard';
-// import growth from '../assets/benifits/growth.svg';
-import Growth from '/src/assets/benifits/growth.svg'
-import drop from '/src/assets/benifits/drop.svg'
-import speed from '/src/assets/benifits/speed.svg'
-import Consultant from '/src/assets/consultantIcon.svg'
-import connections from '/src/assets/connectionIcon.svg'
 
+import React from 'react';
+import HoverCard from '../components/HoverCard';
+import Consultant from '/src/assets/consultantIcon.svg';
+import connections from '/src/assets/connectionIcon.svg';
+import { FaChartLine } from "react-icons/fa";
+import { FaHandHoldingDollar } from "react-icons/fa6";
+import { TbBrandSpeedtest } from "react-icons/tb";
 const Provide = () => {
 
 
@@ -16,13 +15,13 @@ const Provide = () => {
         {/* Content */}
         <div className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
           {/* heading */}
-          <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
+          <h1 className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
             <span className='poppins'>How do we</span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Provide</span>
           </h1>
           {/* cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-6 items-center justify-center mx-auto content-center align-middle">
             {/* Square 1 */}
-            <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl">
+            <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl h-80 xs:h-110">
               <div className="content p-8 items-center flex flex-col justify-center gap-4 ">
                 <img src={Consultant} alt="" />
                 <h2 className="text-xl font-bold mb-2">Dawdle Product Consultants</h2>
@@ -33,9 +32,9 @@ const Provide = () => {
             </div>
 
             {/* Square 2 */}
-            <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl">
+            <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl h-80 xs:h-110">
               <div className="content p-8 items-center flex flex-col justify-center gap-4 ">
-              <img src={connections} alt="" />
+                <img src={connections} alt="" />
                 <h2 className="text-xl font-bold mb-2">Direct Enterprise Partnerships</h2>
                 <p className="text-gray-700">
                   Dawdle partners directly with enterprises actively seeking specific solutions, matching your product to clients ready to benefit from its unique capabilities.
@@ -46,31 +45,32 @@ const Provide = () => {
 
           {/* 2nd heading */}
           <div className="flex flex-col relative z-10 text-center items-center content-center justify-center align-middle self-center">
-            <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
+            <h1 className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-10 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
               <span className="poppins">Key Benefits for</span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Solution Providers</span>
             </h1>
 
             {/* Animated 3 cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-48 mx-auto mt-12  items-center justify-center">
-              <div className="h-44 flex justify-center w-80">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto w-full  mt-12  items-center justify-center content-center align-middle">
+              <div className="h-44 flex justify-center w-full">
                 <HoverCard
                   title="Lower customer churn, increasing lifetime value"
-                  subtitle="Manage profile"
-                  Icon={Growth}
+
+                  Icon={FaChartLine}
+
                 />
               </div>
-              <div className="h-44 flex justify-center w-80">
+              <div className="h-44 flex justify-center w-full">
                 <HoverCard
                   title="Shorter sales cycles, fueling growth"
-                  subtitle="Manage profile"
-                  Icon={drop}
+
+                  Icon={TbBrandSpeedtest}
                 />
               </div>
-              <div className="h-44 flex justify-center w-80">
+              <div className="h-44 flex justify-center w-full">
                 <HoverCard
                   title="Lowered acquisition costs and optimized ROI"
-                  subtitle="Manage profile"
-                  Icon={speed}
+
+                  Icon={FaHandHoldingDollar}
                 />
               </div>
             </div>

@@ -8,7 +8,7 @@ const ConnectRight = () => {
         {/* Content */}
         <div className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
           {/* heading */}
-          <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
+          <h1 className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 md:px-16 lg:px-0 leading-9 md:leading-tight lg:leading-tight">
             <span className='poppins'>We Connect Solution Providers with the</span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Right Enterprises</span>
           </h1>
           {/* image */}

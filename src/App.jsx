@@ -11,15 +11,14 @@ const App = () => {
   return (
     <>
       <Navbar />
-        <Hero />
-        <ConnectRight/>
-        <Provide/>
-        <Solutions/>
-        <Consultant/>
-        <TrustedBy/>
-        <Footer/>
-      <div className="div max-w-256 mx-auto pt-8  px-6 overflow-x-hidden">
-      </div>
+      <Hero />
+      <ConnectRight />
+      <Provide />
+      <Solutions />
+      <Consultant />
+      <TrustedBy/>
+      <Footer />
+      
     </>
   )
 }

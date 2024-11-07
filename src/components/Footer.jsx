@@ -8,7 +8,7 @@ import Twitter from '../assets/socialMedia/twitter.svg'
 
 const Footer = () => {
   return (
-    <footer className='mt-28  bg-bgWhite py-10 md:py-16 lg:py-20'>
+    <footer className='mt-28  bg-bgWhite py-10 md:py-16 lg:py-20 overflow-x-hidden'>
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8">
           {/* Logo and social icons for small and medium screens */}
