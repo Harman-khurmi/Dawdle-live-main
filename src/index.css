@@ -7,8 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
-  /* height: 100vh; */
+  margin: 0;
+  /* Ensure there's no default margin */
+  padding: 0;
+  /* Ensure no default padding */
 }
 
 :root {

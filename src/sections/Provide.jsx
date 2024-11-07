@@ -12,7 +12,7 @@ const Provide = () => {
 
   return (
     <>
-      <section className='h-auto flex justify-center w-full items-center content-center bg-brandPrimary/10 mt-20 relative pb-24'>
+      <section className='h-auto overflow-x-hidden flex justify-center w-full items-center content-center bg-brandPrimary/10 mt-20 relative pb-24'>
         {/* Content */}
         <div className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
           {/* heading */}

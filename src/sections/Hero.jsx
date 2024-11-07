@@ -13,7 +13,7 @@ const Hero = () => {
     }
   };
   return (
-    <section className="relative xs:h-135 h-136 md:h-148 lg:h-148 pb-16 flex justify-center w-full overflow-hidden ">
+    <section className="relative xs:h-135 h-136 md:h-148 lg:h-148 pb-16 flex justify-center  overflow-hidden mx-auto ">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center w-full h-full"

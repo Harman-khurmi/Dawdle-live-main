@@ -10,19 +10,23 @@ import { fadeIn } from '../variants'
 
 const Footer = () => {
   return (
-    <footer className='mt-28  bg-bgWhite py-10 md:py-16 lg:py-20 overflow-x-hidden'>
+    <footer className='mt-28  bg-bgWhite py-10 md:py-16 lg:py-20'>
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8">
           {/* Logo and social icons for small and medium screens */}
-          <div className="flex flex-col items-center lg:items-start">
-            <motion.img
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
-              className='h-12 md:h-16 lg:h-20  my-6 justify-center items-center content-center' src={logo} alt="logo" />
-
-          </div>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="flex flex-col items-center lg:items-start">
+            <img className='h-12 md:h-16 lg:h-20  my-6 justify-center items-center content-center' src={logo} alt="logo" />
+            <div className='lg:hidden flex gap-4'>
+              <SocialIcon src={Linkedin} alt="LinkedIn" />
+              <SocialIcon src={Instagram} alt="Instagram" />
+              <SocialIcon src={Twitter} alt="Twitter" />
+            </div>
+          </motion.div>
 
           {/* Links */}
           <motion.div

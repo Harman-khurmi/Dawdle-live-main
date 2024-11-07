@@ -6,7 +6,7 @@ import React, { forwardRef } from 'react';
 const ConnectRight = forwardRef((props, ref) => {
   return (
     <>
-      <section className='h-auto flex justify-center w-full items-center content-center relative'>
+      <section className='h-auto flex justify-center w-full items-center content-center relative overflow-hidden'>
         {/* Content */}
         <div id="targetComponent" className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
           {/* heading */}
