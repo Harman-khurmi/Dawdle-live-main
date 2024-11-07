@@ -4,6 +4,8 @@ import HoverCard from '../components/HoverCard';
 import Growth from '/src/assets/benifits/growth.svg'
 import drop from '/src/assets/benifits/drop.svg'
 import speed from '/src/assets/benifits/speed.svg'
+import Consultant from '/src/assets/consultantIcon.svg'
+import connections from '/src/assets/connectionIcon.svg'
 
 const Provide = () => {
 
@@ -18,23 +20,25 @@ const Provide = () => {
             <span className='poppins'>How do we</span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Provide</span>
           </h1>
           {/* cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-6">
             {/* Square 1 */}
-            <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105">
-              <div className="content p-8">
-                <h2 className="text-xl font-bold mb-2">Square 1</h2>
+            <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl">
+              <div className="content p-8 items-center flex flex-col justify-center gap-4 ">
+                <img src={Consultant} alt="" />
+                <h2 className="text-xl font-bold mb-2">Dawdle Product Consultants</h2>
                 <p className="text-gray-700">
-                  This is the content inside the first square. Hover to see the effect.
+                  Leveraging a network of professionals and organizations with expertise in your field, Dawdle Product Consultants make meaningful connections that align with your product's strengths.
                 </p>
               </div>
             </div>
 
             {/* Square 2 */}
-            <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105">
-              <div className="content p-8">
-                <h2 className="text-xl font-bold mb-2">Square 2</h2>
+            <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl">
+              <div className="content p-8 items-center flex flex-col justify-center gap-4 ">
+              <img src={connections} alt="" />
+                <h2 className="text-xl font-bold mb-2">Direct Enterprise Partnerships</h2>
                 <p className="text-gray-700">
-                  This is the content inside the second square. Hover to see the effect.
+                  Dawdle partners directly with enterprises actively seeking specific solutions, matching your product to clients ready to benefit from its unique capabilities.
                 </p>
               </div>
             </div>
