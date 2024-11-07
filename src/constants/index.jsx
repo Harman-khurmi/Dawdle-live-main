@@ -1,6 +1,6 @@
 export const navItems = [
   { label: "Dawdle Insights", href: "https://insights.dawdle.live/" },
-  { label: "Consultants", href: "https://partners.dawdle.live/" },
+  { label: " Product Consultants", href: "https://partners.dawdle.live/" },
   { label: "Companies", href: "https://cal.com/dawdle-clients/exploratory" },
 ];
 export const footerItems = [
