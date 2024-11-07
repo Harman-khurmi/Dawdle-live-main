@@ -1,6 +1,8 @@
 import React from 'react'
 import vector from '../assets/consultVector.svg';
 import arrowBtn from '../assets/arrowBtn.svg';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants'
 const Consultant = () => {
   return (
     <>
@@ -8,25 +10,50 @@ const Consultant = () => {
         {/* Content */}
         <div className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
           {/* heading */}
-          <h1 className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
+          <motion.h1
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
             <span className='poppins'>Join us as Dawdle</span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Product Consultant</span>
-          </h1>
+          </motion.h1>
           {/* image */}
-          <div className=''>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className=''>
             <img src={vector} alt="connectRight-image" className='xs:h-40 h-56 md:h-72' />
-          </div>
+          </motion.div>
           {/* parah */}
-          <p className="xs:text-xs text-sm font-medium md:text-lg text-brandPrimary  px-3 md:px-8 lg:px-0 mt-6  text-center">
+          <motion.p
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="xs:text-xs text-sm font-medium md:text-lg text-brandPrimary  px-3 md:px-8 lg:px-0 mt-6  text-center">
             Ready to make meaningful connections and earn rewards?
 
-          </p>
-          <p className="xs:text-xs text-sm font-medium md:text-lg text-brandSecondary px-3 md:px-8 lg:px-0 mt-3">
+          </motion.p>
+          <motion.p
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="xs:text-xs text-sm font-medium md:text-lg text-brandSecondary px-3 md:px-8 lg:px-0 mt-3">
             As a Dawdle Product Consultant, you can be a pivotal part of this ecosystem. Whether as an organization or an individual, join us to help connect technology providers with enterprises, making an impact with every connection you facilitate.
 
-          </p>
+          </motion.p>
 
           {/* button */}
-          <div className='mt-6 h-16 items-center w-full flex justify-center'>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className='mt-6 h-16 items-center w-full flex justify-center'>
             <a href='https://lucide.dev/icons/gauge ' target="_blank">
               <button
                 // onClick={scrollToComponent}
@@ -45,7 +72,7 @@ const Consultant = () => {
                 </div>
               </button>
             </a>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

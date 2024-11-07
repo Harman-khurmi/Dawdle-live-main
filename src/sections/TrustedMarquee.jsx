@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
-
+import { fadeIn } from '../variants'
 
 const TrustedMarquee = () => {
 
@@ -27,7 +27,12 @@ const TrustedMarquee = () => {
     <div className="container w-full mx-auto ">
 
       {/* top marquee */}
-      <div className="w-full flex MyGradient gap-16">
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.5 }}
+        className="w-full flex MyGradient gap-16">
 
         {/* First marquee */}
         <motion.div initial={{ x: '0' }} animate={{ x: '-100%' }} transition={{ duration: 60, repeat: Infinity, ease: 'linear' }} className="flex flex-shrink-0 gap-20">
@@ -47,7 +52,7 @@ const TrustedMarquee = () => {
           ))}
         </motion.div>
 
-      </div>
+      </motion.div>
 
     </div>
   )

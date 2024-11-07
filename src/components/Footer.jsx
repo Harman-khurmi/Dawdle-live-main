@@ -5,6 +5,8 @@ import arrowLink from "../assets/LinkArrow.svg"
 import Linkedin from '../assets/socialMedia/linkedLogo.svg'
 import Instagram from '../assets/socialMedia/instagram.svg'
 import Twitter from '../assets/socialMedia/twitter.svg'
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants'
 
 const Footer = () => {
   return (
@@ -13,16 +15,22 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8">
           {/* Logo and social icons for small and medium screens */}
           <div className="flex flex-col items-center lg:items-start">
-            <img className='h-12 md:h-16 lg:h-20  my-6 justify-center items-center content-center' src={logo} alt="logo" />
-            <div className='lg:hidden flex gap-4'>
-              <SocialIcon src={Linkedin} alt="LinkedIn" />
-              <SocialIcon src={Instagram} alt="Instagram" />
-              <SocialIcon src={Twitter} alt="Twitter" />
-            </div>
+            <motion.img
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.5 }}
+              className='h-12 md:h-16 lg:h-20  my-6 justify-center items-center content-center' src={logo} alt="logo" />
+
           </div>
 
           {/* Links */}
-          <div className='grid md:grid-cols-3 gap-8'>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className='grid md:grid-cols-3 gap-8'>
             <ul className='flex flex-col  md:items-center lg:gap-1 ' >
               <h3 className='font-bold py-2 text-lg'>Quick Links</h3>
               {navItems?.map((item, index) => (
@@ -41,14 +49,19 @@ const Footer = () => {
                 <FooterLink key={index} {...item} />
               ))}
             </ul>
-          </div>
+          </motion.div>
 
           {/* Social icons for large screens */}
-          <div className='hidden lg:flex justify-center items-center gap-4'>
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className='hidden lg:flex justify-center items-center gap-4'>
             <SocialIcon src={Linkedin} alt="LinkedIn" link={"https://www.linkedin.com/company/dawdle-supercharging-b2b-buying-decisions/posts/?feedView=all"} />
             <SocialIcon src={Instagram} alt="Instagram" link={"#"} />
             <SocialIcon src={Twitter} alt="Twitter" link={"#"} />
-          </div>
+          </motion.div>
         </div>
       </div>
     </footer>

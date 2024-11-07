@@ -6,6 +6,7 @@ import logo from "../assets/Logo.svg";
 import { navItems } from "../constants";
 import arrowLink from "../assets/LinkArrow.svg";
 
+import { fadeIn } from '../variants'
 
 const Navbar = () => {
   const [mobileSideOpen, setMobileSideOpen] = useState(false);
@@ -56,9 +57,19 @@ const Navbar = () => {
       <div className="container lg:px-28 md:px-10 px-6 mx-auto relative text-lg font-medium">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="py-2  h-11 md:h-12 lg:h-14 cursor-pointer" src={logo} alt="logo" onClick={handleClick}  />
+            <motion.img
+              variants={fadeIn("up", 0)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0 }}
+              className="py-2  h-11 md:h-12 lg:h-14 cursor-pointer" src={logo} alt="logo" onClick={handleClick} />
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <motion.ul
+            variants={fadeIn("up", 0)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0 }}
+            className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index} className="flex items-center gap-2">
                 <a href={item.href} target="_blank" rel="noopener noreferrer">
@@ -69,7 +80,7 @@ const Navbar = () => {
                 </span>
               </li>
             ))}
-          </ul>
+          </motion.ul>
           <div className="lg:hidden flex">
             <button className="text-brandSecondary" onClick={toggleNavbar}>
               <motion.div

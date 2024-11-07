@@ -1,6 +1,8 @@
 import React from 'react'
 import solution from '../assets/solutionVector.svg';
 import arrowBtn from '../assets/arrowBtn.svg';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants'
 const Solutions = () => {
   return (
     <>
@@ -8,20 +10,40 @@ const Solutions = () => {
         {/* Content */}
         <div className="flex flex-col relative z-10 text-center p-3 max-w-4xl mx-auto items-center content-center justify-center">
           {/* heading */}
-          <h1 className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
+          <motion.h1
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
             <span className='poppins'>Enterprises Looking for Specialized </span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Technology Solutions</span>
-          </h1>
+          </motion.h1>
           {/* image */}
-          <div className=''>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className=''>
             <img src={solution} alt="connectRight-image" className='xs:h-40 h-56 md:h-72 mt-6' />
-          </div>
+          </motion.div>
           {/* parah */}
-          <p className="xs:text-xs text-sm font-medium md:text-lg text-brandSecondary xs:p- px-3 md:px-8 lg:px-0 mt-10">
+          <motion.p
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="xs:text-xs text-sm font-medium md:text-lg text-brandSecondary xs:p- px-3 md:px-8 lg:px-0 mt-10">
             If your business requires specialized technology solutions, Dawdle connects you with a curated network of technology providers tailored to meet your needs, ensuring you find the right fit the first time around.
-          </p>
+          </motion.p>
 
           {/* button */}
-          <div className='mt-6 h-16 items-center w-full flex justify-center'>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className='mt-6 h-16 items-center w-full flex justify-center'>
             <a href='https://lucide.dev/icons/gauge ' target="_blank">
               <button
                 // onClick={scrollToComponent}
@@ -41,7 +63,7 @@ const Solutions = () => {
                 </div>
               </button>
             </a>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
