@@ -17,32 +17,34 @@ const Consultant = () => {
           </div>
           {/* parah */}
           <p className="xs:text-xs text-sm font-medium md:text-lg text-brandPrimary  px-3 md:px-8 lg:px-0 mt-6  text-center">
-          Ready to make meaningful connections and earn rewards?
+            Ready to make meaningful connections and earn rewards?
 
           </p>
           <p className="xs:text-xs text-sm font-medium md:text-lg text-brandSecondary px-3 md:px-8 lg:px-0 mt-3">
-          As a Dawdle Product Consultant, you can be a pivotal part of this ecosystem. Whether as an organization or an individual, join us to help connect technology providers with enterprises, making an impact with every connection you facilitate.
+            As a Dawdle Product Consultant, you can be a pivotal part of this ecosystem. Whether as an organization or an individual, join us to help connect technology providers with enterprises, making an impact with every connection you facilitate.
 
           </p>
 
           {/* button */}
           <div className='mt-6 h-16 items-center w-full flex justify-center'>
-            <button
-              // onClick={scrollToComponent}
-              className='xs:h-10 h-12 md:h-14 xs:w-36 w-44 md:w-48 lg:w-52 flex justify-between font-medium bg-brandPrimary items-center rounded-full pl-4 pr-1 text-bgWhite transition-all duration-300 ease-in-out transform hover:bg-bgWhite hover:text-brandPrimary hover:shadow-lg hover:scale-105'
-            >
-              <h3 className='xs:text-sm text-md md:text-lg lg:text-xl transition-all duration-100 ease-in-out'>
-                Join with Us
-              </h3>
-              <div className='flex rounded-full content-center justify-center items-center text-brandSecondary bg-bgWhite md:h-12 md:w-12 h-10 xs:h-8 xs:w-8 w-10 transition-all duration-100 ease-in-out '>
-                <img
+            <a href='https://lucide.dev/icons/gauge ' target="_blank">
+              <button
+                // onClick={scrollToComponent}
+                className='xs:h-10 h-12 md:h-14 xs:w-36 w-44 md:w-48 lg:w-52 flex justify-between font-medium bg-brandPrimary items-center rounded-full pl-4 pr-1 text-bgWhite transition-all duration-300 ease-in-out transform hover:bg-bgWhite hover:text-brandPrimary hover:shadow-lg hover:scale-105'
+              >
+                <h3 className='xs:text-sm text-md md:text-lg lg:text-xl transition-all duration-100 ease-in-out'>
+                  Join with Us
+                </h3>
+                <div className='flex rounded-full content-center justify-center items-center text-brandSecondary bg-bgWhite md:h-12 md:w-12 h-10 xs:h-8 xs:w-8 w-10 transition-all duration-100 ease-in-out '>
+                  <img
 
-                  className='flex content-center justify-center items-center transition-transform duration-300 ease-in-out xs:h-3 '
-                  src={arrowBtn}
-                  alt="arrow"
-                />
-              </div>
-            </button>
+                    className='flex content-center justify-center items-center transition-transform duration-300 ease-in-out xs:h-3 '
+                    src={arrowBtn}
+                    alt="arrow"
+                  />
+                </div>
+              </button>
+            </a>
           </div>
         </div>
       </section>

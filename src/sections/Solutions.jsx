@@ -22,22 +22,25 @@ const Solutions = () => {
 
           {/* button */}
           <div className='mt-6 h-16 items-center w-full flex justify-center'>
-            <button
-              // onClick={scrollToComponent}
-              className='xs:h-10 h-12 md:h-14 xs:w-44 w-52 md:w-60 lg:w-64 flex justify-between font-medium bg-brandPrimary items-center rounded-full pl-4 pr-1 text-bgWhite transition-all duration-300 ease-in-out transform hover:bg-bgWhite hover:text-brandPrimary hover:shadow-lg hover:scale-105'
-            >
-              <h3 className='xs:text-sm text-md md:text-lg lg:text-xl transition-all duration-100 ease-in-out'>
-                Connect with Us
-              </h3>
-              <div className='flex rounded-full content-center justify-center items-center text-brandSecondary bg-bgWhite md:h-12 md:w-12 h-10 xs:h-8 xs:w-8 w-10 transition-all duration-100 ease-in-out '>
-                <img
+            <a href='https://lucide.dev/icons/gauge ' target="_blank">
+              <button
+                // onClick={scrollToComponent}
 
-                  className='flex content-center justify-center items-center transition-transform duration-300 ease-in-out xs:h-3 '
-                  src={arrowBtn}
-                  alt="arrow"
-                />
-              </div>
-            </button>
+                className='xs:h-10 h-12 md:h-14 xs:w-44 w-52 md:w-60 lg:w-64 flex justify-between font-medium bg-brandPrimary items-center rounded-full pl-4 pr-1 text-bgWhite transition-all duration-300 ease-in-out transform hover:bg-bgWhite hover:text-brandPrimary hover:shadow-lg hover:scale-105'
+              >
+                <h3 className='xs:text-sm text-md md:text-lg lg:text-xl transition-all duration-100 ease-in-out'>
+                  Connect with Us
+                </h3>
+                <div className='flex rounded-full content-center justify-center items-center text-brandSecondary bg-bgWhite md:h-12 md:w-12 h-10 xs:h-8 xs:w-8 w-10 transition-all duration-100 ease-in-out '>
+                  <img
+
+                    className='flex content-center justify-center items-center transition-transform duration-300 ease-in-out xs:h-3 '
+                    src={arrowBtn}
+                    alt="arrow"
+                  />
+                </div>
+              </button>
+            </a>
           </div>
         </div>
       </section>

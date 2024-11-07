@@ -22,7 +22,7 @@ const Provide = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-6 items-center justify-center mx-auto content-center align-middle">
             {/* Square 1 */}
             <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl h-auto">
-              <div className="content p-8 items-center flex flex-col justify-center gap-4 ">
+              <div className="content p-9 items-center flex flex-col justify-center gap-4 ">
                 <img src={Consultant} alt="" className='h-16 xs:h-12 ' />
                 <h2 className="md:text-xl text-lg  font-bold">Dawdle Product Consultants</h2>
                 <p className="text-gray-700 text-base ">
@@ -33,7 +33,7 @@ const Provide = () => {
 
             {/* Square 2 */}
             <div className="square hover-effect transition-transform duration-300 ease-in-out transform hover:scale-105 rounded-3xl h-auto">
-              <div className="content p-8 items-center flex flex-col justify-center gap-4 ">
+              <div className="content p-9 items-center flex flex-col justify-center gap-4 ">
                 <img src={connections} alt="" className='h-16 xs:h-12 ' />
                 <h2 className="md:text-xl text-lg  font-bold ">Direct Enterprise Partnerships</h2>
                 <p className="text-gray-700 text-base ">
