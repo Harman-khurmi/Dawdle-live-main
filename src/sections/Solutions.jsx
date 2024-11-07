@@ -17,7 +17,7 @@ const Solutions = () => {
           </div>
           {/* parah */}
           <p className="xs:text-xs text-sm font-medium md:text-lg text-brandSecondary xs:p- px-3 md:px-8 lg:px-0 mt-6">
-          If your business requires specialized technology solutions, Dawdle connects you with a curated network of technology providers tailored to meet your needs, ensuring you find the right fit the first time around.If your business requires specialized technology solutions, Dawdle connects you with a curated network of technology providers tailored to meet your needs, ensuring you find the right fit the first time around.
+            If your business requires specialized technology solutions, Dawdle connects you with a curated network of technology providers tailored to meet your needs, ensuring you find the right fit the first time around.
           </p>
 
           {/* button */}
