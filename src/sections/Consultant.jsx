@@ -54,7 +54,7 @@ const Consultant = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.5 }}
             className='mt-6 h-16 items-center w-full flex justify-center'>
-            <a href='https://lucide.dev/icons/gauge ' target="_blank">
+            <a href='https://partners.dawdle.live/' target="_blank">
               <button
                 // onClick={scrollToComponent}
                 className='xs:h-10 h-12 md:h-14 xs:w-36 w-44 md:w-48 lg:w-52 flex justify-between font-medium bg-brandPrimary items-center rounded-full pl-4 pr-1 text-bgWhite transition-all duration-300 ease-in-out transform hover:bg-bgWhite hover:text-brandPrimary hover:shadow-lg hover:scale-105'

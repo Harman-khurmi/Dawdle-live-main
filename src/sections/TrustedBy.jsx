@@ -5,7 +5,7 @@ import { fadeIn } from '../variants'
 const TrustedBy = () => {
   return (
     <>
-      <div className="mt-10 rounded-3xl mb-6  relative mx-auto  justify-center items-center overflow-x-hidden">
+      <div className="mt-10 rounded-3xl mb-6  relative mx-auto  justify-center items-center overflow-hidden">
         <div className=' flex flex-col gap-20 w-full justify-center items-center content-center text-center py-4 h-auto '>
           {/* heading */}
           <motion.h1

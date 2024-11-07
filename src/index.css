@@ -7,7 +7,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+  height: 100vh;
+}
 
 :root {
   font-family: "Poppins", "Libre Baskerville", sans-serif;
