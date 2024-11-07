@@ -26,7 +26,7 @@ const TrustedMarquee = () => {
     "/Companies/19.png",
     "/Companies/20.png",
     "/Companies/21.png",
-    "/Companies/22.png",
+    "/Companies/22.jpg",
     "/Companies/23.jpg",
     "/Companies/24.jpg",
     "/Companies/25.jpg",
