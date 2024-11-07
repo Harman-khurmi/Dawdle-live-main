@@ -22,7 +22,7 @@ const Provide = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.5 }}
             className="lg:text-5xl md:text-4xl text-3xl xs:text-2xl font-semibold text-brandSecondary mb-4 mt-8 md:mt-16 leading-9 md:leading-tight lg:leading-tight">
-            <span className='poppins'>How do we</span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Provide?</span>
+            <span className='poppins'>How do we</span> <span className="font-['Libre_Baskerville'] italic text-brandPrimary">Connect?</span>
           </motion.h1>
           {/* cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-6 items-center justify-center mx-auto content-center align-middle">
