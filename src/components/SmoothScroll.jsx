@@ -19,7 +19,7 @@ var options = {
 const SmoothScroll = () => {
   useEffect(() => {
     Scrollbar.init(document.body, options);
-    Scrollbar.use(OverscrollPlugin);
+    // Scrollbar.use(OverscrollPlugin);
   }, [])
   return null
 }
