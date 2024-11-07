@@ -22,9 +22,9 @@ const Footer = () => {
             className="flex flex-col items-center lg:items-start">
             <img className='h-12 md:h-16 lg:h-20  my-6 justify-center items-center content-center' src={logo} alt="logo" />
             <div className='lg:hidden flex gap-4'>
-              <SocialIcon src={Linkedin} alt="LinkedIn" />
+              <SocialIcon src={Linkedin} alt="LinkedIn" link={"https://www.linkedin.com/company/dawdle-supercharging-b2b-buying-decisions/posts/?feedView=all"} />
               <SocialIcon src={Instagram} alt="Instagram" />
-              <SocialIcon src={Twitter} alt="Twitter" />
+              <SocialIcon src={Twitter} alt="Twitter" link={"https://x.com/Team_Dawdle"} />
             </div>
           </motion.div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
             className='hidden lg:flex justify-center items-center gap-4'>
             <SocialIcon src={Linkedin} alt="LinkedIn" link={"https://www.linkedin.com/company/dawdle-supercharging-b2b-buying-decisions/posts/?feedView=all"} />
             <SocialIcon src={Instagram} alt="Instagram" link={"#"} />
-            <SocialIcon src={Twitter} alt="Twitter" link={"#"} />
+            <SocialIcon src={Twitter} alt="Twitter" link={"https://x.com/Team_Dawdle"} />
           </motion.div>
         </div>
       </div>

@@ -44,7 +44,7 @@ const Solutions = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.5 }}
             className='mt-6 h-16 items-center w-full flex justify-center'>
-            <a href='/' target="_blank">
+            <a href='https://cal.com/dawdle-clients/exploratory' target="_blank">
               <button
                 // onClick={scrollToComponent}
 
