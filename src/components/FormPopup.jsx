@@ -107,7 +107,7 @@ function FormPopup({ show, onClose, onSubmit }) {
                   <option className='text-xs md:text-sm ' value="Cybersecurity and Threat Prevention">Cybersecurity and Threat Prevention
                   </option>
                 </select>
-                {errors.option && <p className="text-red-500 text-xs">{errors.option_selected}</p>}
+                {errors.option_selected && <p className="text-red-500 text-xs">{errors.option_selected}</p>}
               </div>
               <div className="mb-4">
                 <label className="block text-sm font-medium text-brandPrimary">Name</label>
@@ -119,7 +119,7 @@ function FormPopup({ show, onClose, onSubmit }) {
                   className="w-full p-2 border rounded-xl focus:outline-brandPrimary"
                   placeholder="Your name"
                 />
-                {errors.name && <p className="text-red-500 text-xs">{errors.user_name}</p>}
+                {errors.user_name && <p className="text-red-500 text-xs">{errors.user_name}</p>}
               </div>
               <div className="mb-4">
                 <label className="block text-sm font-medium text-brandPrimary">Email</label>
@@ -131,7 +131,7 @@ function FormPopup({ show, onClose, onSubmit }) {
                   className="w-full p-2 border rounded-xl focus:outline-brandPrimary"
                   placeholder="Your email"
                 />
-                {errors.email && <p className="text-red-500 text-xs">{errors.user_email}</p>}
+                {errors.user_email && <p className="text-red-500 text-xs">{errors.user_email}</p>}
               </div>
               <div className="mb-4">
                 <label className="block text-sm font-medium text-brandPrimary">Phone Number</label>
@@ -143,7 +143,7 @@ function FormPopup({ show, onClose, onSubmit }) {
                   className="w-full p-2 border rounded-xl focus:outline-brandPrimary"
                   placeholder="Your phone number"
                 />
-                {errors.phone && <p className="text-red-500 text-xs">{errors.user_phone}</p>}
+                {errors.user_phone && <p className="text-red-500 text-xs">{errors.user_phone}</p>}
               </div>
               <div className="flex justify-center gap-10 mt-12">
                 <button
