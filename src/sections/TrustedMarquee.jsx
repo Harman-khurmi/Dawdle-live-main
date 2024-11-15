@@ -47,7 +47,7 @@ const TrustedMarquee = () => {
         <motion.div initial={{ x: '0' }} animate={{ x: '-100%' }} transition={{ duration: 50, repeat: Infinity, ease: 'linear' }} className="flex flex-shrink-0 gap-20">
           {upperMarquee.map((image, index) => (
             <div key={index} className='border border-solid border-slate-300 rounded-lg h-16 md:h-20 bg-cover  justify-center items-center content-center'>
-              <img className=' w-full h-full bg-center object-cover bg-cover p-2' src={image} alt={`company-logo-${index}`} />
+              <img className='h-full p-2' src={image} alt={`company-logo-${index}`} />
             </div>
           ))}
         </motion.div>
@@ -56,7 +56,7 @@ const TrustedMarquee = () => {
         <motion.div initial={{ x: '0' }} animate={{ x: '-100%' }} transition={{ duration: 50, repeat: Infinity, ease: 'linear' }} className="flex flex-shrink-0 gap-20">
           {upperMarquee.map((image, index) => (
             <div key={index + upperMarquee.length} className='border border-solid border-slate-300 rounded-lg h-16 md:h-20 bg-cover  justify-center items-center content-center'>
-              <img className=' w-full h-full bg-center object-cover bg-cover p-2' src={image} alt={`company-logo-${index}`} />
+              <img className='h-full p-2' src={image} alt={`company-logo-${index}`} />
             </div>
           ))}
         </motion.div>
